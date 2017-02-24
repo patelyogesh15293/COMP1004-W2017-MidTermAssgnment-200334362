@@ -157,7 +157,7 @@
             // 
             this.STRLabel.AutoSize = true;
             this.STRLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.STRLabel.Location = new System.Drawing.Point(32, 37);
+            this.STRLabel.Location = new System.Drawing.Point(32, 36);
             this.STRLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.STRLabel.Name = "STRLabel";
             this.STRLabel.Size = new System.Drawing.Size(65, 29);
