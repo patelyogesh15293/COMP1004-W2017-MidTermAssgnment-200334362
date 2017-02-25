@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FinalForm));
-            this.Font = new System.Windows.Forms.ToolStripMenuItem();
+            //this.Font = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,50 +39,50 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.HeightTextBox = new System.Windows.Forms.TextBox();
+            this.WeightTextBox = new System.Windows.Forms.TextBox();
+            this.AgeTextBox = new System.Windows.Forms.TextBox();
+            this.NameTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.HealthPointsTextBox = new System.Windows.Forms.TextBox();
+            this.RaceTextBox = new System.Windows.Forms.TextBox();
+            this.JobTextBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.CHATextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.ENDTextBox = new System.Windows.Forms.TextBox();
+            this.PERTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.INTTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.STRTextBox = new System.Windows.Forms.TextBox();
+            this.DEXTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CharacterPictureBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // Font
             // 
-            this.Font.Name = "Font";
-            this.Font.Size = new System.Drawing.Size(181, 22);
-            this.Font.Text = "fontStripMenuItem1";
+            //this.Font.Name = "Font";
+            //this.Font.Size = new System.Drawing.Size(181, 22);
+            //this.Font.Text = "fontStripMenuItem1";
             // 
             // menuStrip1
             // 
@@ -133,8 +133,9 @@
             // 
             this.FontStripMenuItem1.Name = "FontStripMenuItem1";
             this.FontStripMenuItem1.ShortcutKeyDisplayString = "clt + f";
-            this.FontStripMenuItem1.Size = new System.Drawing.Size(136, 22);
+            this.FontStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.FontStripMenuItem1.Text = "&Font";
+            this.FontStripMenuItem1.Click += new System.EventHandler(this.FontStripMenuItem1_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -153,10 +154,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.HeightTextBox);
+            this.groupBox1.Controls.Add(this.WeightTextBox);
+            this.groupBox1.Controls.Add(this.AgeTextBox);
+            this.groupBox1.Controls.Add(this.NameTextBox);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
@@ -169,37 +170,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Character\'s Information";
             // 
-            // textBox10
+            // HeightTextBox
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(257, 29);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 24);
-            this.textBox10.TabIndex = 7;
+            this.HeightTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeightTextBox.Location = new System.Drawing.Point(257, 29);
+            this.HeightTextBox.Name = "HeightTextBox";
+            this.HeightTextBox.Size = new System.Drawing.Size(100, 24);
+            this.HeightTextBox.TabIndex = 7;
             // 
-            // textBox9
+            // WeightTextBox
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(257, 94);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 24);
-            this.textBox9.TabIndex = 6;
+            this.WeightTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeightTextBox.Location = new System.Drawing.Point(257, 94);
+            this.WeightTextBox.Name = "WeightTextBox";
+            this.WeightTextBox.Size = new System.Drawing.Size(100, 24);
+            this.WeightTextBox.TabIndex = 6;
             // 
-            // textBox8
+            // AgeTextBox
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(61, 100);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(108, 24);
-            this.textBox8.TabIndex = 5;
+            this.AgeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgeTextBox.Location = new System.Drawing.Point(61, 100);
+            this.AgeTextBox.Name = "AgeTextBox";
+            this.AgeTextBox.Size = new System.Drawing.Size(108, 24);
+            this.AgeTextBox.TabIndex = 5;
             // 
-            // textBox7
+            // NameTextBox
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(61, 32);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(108, 24);
-            this.textBox7.TabIndex = 4;
+            this.NameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameTextBox.Location = new System.Drawing.Point(61, 32);
+            this.NameTextBox.Name = "NameTextBox";
+            this.NameTextBox.Size = new System.Drawing.Size(108, 24);
+            this.NameTextBox.TabIndex = 4;
             // 
             // label10
             // 
@@ -243,9 +244,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox11);
+            this.groupBox2.Controls.Add(this.HealthPointsTextBox);
+            this.groupBox2.Controls.Add(this.RaceTextBox);
+            this.groupBox2.Controls.Add(this.JobTextBox);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label11);
@@ -255,32 +256,32 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             // 
-            // textBox13
+            // HealthPointsTextBox
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(108, 101);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(86, 24);
-            this.textBox13.TabIndex = 5;
+            this.HealthPointsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HealthPointsTextBox.Location = new System.Drawing.Point(108, 101);
+            this.HealthPointsTextBox.Name = "HealthPointsTextBox";
+            this.HealthPointsTextBox.ReadOnly = true;
+            this.HealthPointsTextBox.Size = new System.Drawing.Size(86, 24);
+            this.HealthPointsTextBox.TabIndex = 5;
             // 
-            // textBox12
+            // RaceTextBox
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(108, 64);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(86, 24);
-            this.textBox12.TabIndex = 4;
+            this.RaceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RaceTextBox.Location = new System.Drawing.Point(108, 64);
+            this.RaceTextBox.Name = "RaceTextBox";
+            this.RaceTextBox.ReadOnly = true;
+            this.RaceTextBox.Size = new System.Drawing.Size(86, 24);
+            this.RaceTextBox.TabIndex = 4;
             // 
-            // textBox11
+            // JobTextBox
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(110, 22);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(84, 24);
-            this.textBox11.TabIndex = 3;
+            this.JobTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JobTextBox.Location = new System.Drawing.Point(110, 22);
+            this.JobTextBox.Name = "JobTextBox";
+            this.JobTextBox.ReadOnly = true;
+            this.JobTextBox.Size = new System.Drawing.Size(84, 24);
+            this.JobTextBox.TabIndex = 3;
             // 
             // label13
             // 
@@ -327,17 +328,17 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.textBox6, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.CHATextBox, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.ENDTextBox, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.PERTextBox, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.INTTextBox, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.STRTextBox, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.DEXTextBox, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 26);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -351,14 +352,14 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(297, 202);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // textBox6
+            // CHATextBox
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(151, 168);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(143, 24);
-            this.textBox6.TabIndex = 11;
+            this.CHATextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CHATextBox.Location = new System.Drawing.Point(151, 168);
+            this.CHATextBox.Name = "CHATextBox";
+            this.CHATextBox.ReadOnly = true;
+            this.CHATextBox.Size = new System.Drawing.Size(143, 24);
+            this.CHATextBox.TabIndex = 11;
             // 
             // label4
             // 
@@ -380,23 +381,23 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "PER";
             // 
-            // textBox5
+            // ENDTextBox
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(151, 69);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(143, 24);
-            this.textBox5.TabIndex = 10;
+            this.ENDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ENDTextBox.Location = new System.Drawing.Point(151, 69);
+            this.ENDTextBox.Name = "ENDTextBox";
+            this.ENDTextBox.ReadOnly = true;
+            this.ENDTextBox.Size = new System.Drawing.Size(143, 24);
+            this.ENDTextBox.TabIndex = 10;
             // 
-            // textBox4
+            // PERTextBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(151, 135);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(143, 24);
-            this.textBox4.TabIndex = 9;
+            this.PERTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PERTextBox.Location = new System.Drawing.Point(151, 135);
+            this.PERTextBox.Name = "PERTextBox";
+            this.PERTextBox.ReadOnly = true;
+            this.PERTextBox.Size = new System.Drawing.Size(143, 24);
+            this.PERTextBox.TabIndex = 9;
             // 
             // label6
             // 
@@ -408,14 +409,14 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "CHA";
             // 
-            // textBox2
+            // INTTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(151, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(143, 24);
-            this.textBox2.TabIndex = 7;
+            this.INTTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.INTTextBox.Location = new System.Drawing.Point(151, 102);
+            this.INTTextBox.Name = "INTTextBox";
+            this.INTTextBox.ReadOnly = true;
+            this.INTTextBox.Size = new System.Drawing.Size(143, 24);
+            this.INTTextBox.TabIndex = 7;
             // 
             // label2
             // 
@@ -437,23 +438,23 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "END";
             // 
-            // textBox1
+            // STRTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(151, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(143, 24);
-            this.textBox1.TabIndex = 6;
+            this.STRTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.STRTextBox.Location = new System.Drawing.Point(151, 3);
+            this.STRTextBox.Name = "STRTextBox";
+            this.STRTextBox.ReadOnly = true;
+            this.STRTextBox.Size = new System.Drawing.Size(143, 24);
+            this.STRTextBox.TabIndex = 6;
             // 
-            // textBox3
+            // DEXTextBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(151, 36);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(143, 24);
-            this.textBox3.TabIndex = 8;
+            this.DEXTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DEXTextBox.Location = new System.Drawing.Point(151, 36);
+            this.DEXTextBox.Name = "DEXTextBox";
+            this.DEXTextBox.ReadOnly = true;
+            this.DEXTextBox.Size = new System.Drawing.Size(143, 24);
+            this.DEXTextBox.TabIndex = 8;
             // 
             // label1
             // 
@@ -475,20 +476,20 @@
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // CharacterPictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(414, 222);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 226);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.CharacterPictureBox.Location = new System.Drawing.Point(414, 222);
+            this.CharacterPictureBox.Name = "CharacterPictureBox";
+            this.CharacterPictureBox.Size = new System.Drawing.Size(200, 226);
+            this.CharacterPictureBox.TabIndex = 3;
+            this.CharacterPictureBox.TabStop = false;
             // 
             // FinalForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(641, 508);
             this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.CharacterPictureBox);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -507,7 +508,7 @@
             this.groupBox3.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -515,7 +516,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolStripMenuItem Font;
+        //private System.Windows.Forms.ToolStripMenuItem Font;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
@@ -527,12 +528,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CHATextBox;
+        private System.Windows.Forms.TextBox ENDTextBox;
+        private System.Windows.Forms.TextBox PERTextBox;
+        private System.Windows.Forms.TextBox DEXTextBox;
+        private System.Windows.Forms.TextBox INTTextBox;
+        private System.Windows.Forms.TextBox STRTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -540,19 +541,19 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox CharacterPictureBox;
         private System.Windows.Forms.Button ExitButton;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox HeightTextBox;
+        private System.Windows.Forms.TextBox WeightTextBox;
+        private System.Windows.Forms.TextBox AgeTextBox;
+        private System.Windows.Forms.TextBox NameTextBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox HealthPointsTextBox;
+        private System.Windows.Forms.TextBox RaceTextBox;
+        private System.Windows.Forms.TextBox JobTextBox;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;

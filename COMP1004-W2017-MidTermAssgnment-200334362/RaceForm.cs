@@ -18,6 +18,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200334362
         // Declare private variable
         private String _holdValue;
 
+        // Declare some local private variables for assign character class values
         private int _STR = Convert.ToInt32(Program.character.STR);
         private int _DEX = Convert.ToInt32(Program.character.DEX);
         private int _END = Convert.ToInt32(Program.character.END);
@@ -58,8 +59,14 @@ namespace COMP1004_W2017_MidTermAssgnment_200334362
             }
         }
 
+        /// <summary>
+        /// Handler for radio button checked event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void HalflingRadioButton_CheckedChanged(object sender, EventArgs e)
         {
+            // call local method
             _pictureSelection();
 
             RacialBonusTextBox.Text = "Increase DEX and INT by 20 points, Decrease STR by 10 points";
@@ -70,6 +77,12 @@ namespace COMP1004_W2017_MidTermAssgnment_200334362
             this._holdValue = HalflingRadioButton.Text;
         }
 
+
+        /// <summary>
+        /// Handler for radio button checked event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DwarfRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             _pictureSelection();
@@ -79,10 +92,17 @@ namespace COMP1004_W2017_MidTermAssgnment_200334362
             _PER = _PER + 20;
             _CHA = _CHA - 10;
 
+            // Assign values to local variable
             this._holdValue = DwarfRadioButton.Text;
 
         }
 
+
+        /// <summary>
+        /// Handler for radio button checked event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ELFRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             _pictureSelection();
@@ -95,6 +115,12 @@ namespace COMP1004_W2017_MidTermAssgnment_200334362
 
         }
 
+
+        /// <summary>
+        /// Handler for next button checked event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
 
@@ -109,10 +135,16 @@ namespace COMP1004_W2017_MidTermAssgnment_200334362
             this.Hide();
         }
 
+
+        /// <summary>
+        /// Handler for load form 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RaceForm_Load(object sender, EventArgs e)
         {
             CharacterPictureBox.Image = Properties.Resources.M_Human1;
-
+          
             RacialBonusTextBox.Text = "Increase all abilities by 5";
             _STR = _STR + 5;
             _DEX = _DEX + 5;
