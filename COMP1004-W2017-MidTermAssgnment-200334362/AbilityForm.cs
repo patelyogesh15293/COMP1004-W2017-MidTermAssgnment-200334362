@@ -67,6 +67,15 @@ namespace COMP1004_W2017_MidTermAssgnment_200334362
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            Character character = Program.character;
+
+            character.STR = STRTextBox.Text;
+            character.DEX = DEXTextBox.Text;
+            character.END = ENDTextBox.Text;
+            character.INT = INTTextBox.Text;
+            character.PER = PERTextBox.Text;
+            character.CHA = CHATextBox.Text;
+
             // Initialize the next form
             RaceForm raceForm = new RaceForm();
 
