@@ -13,7 +13,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200334362
     public partial class RaceForm : Form
     {
         // reference previous created form
-        public AbilityForm previousForm;;
+        public AbilityForm previousForm;
 
         // Declare private variable
         private String _holdValue;
